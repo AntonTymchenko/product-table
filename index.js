@@ -9,7 +9,7 @@ let trIndx = 0;
 let totalPrice = 0;
 
 table.addEventListener("click", onTableClick);
-add.addEventListener("click", onBtnAddClick);
+add.addEventListener("click", addNewRow);
 table.addEventListener("dblclick", onTableDoubleClick);
 
 function onTableClick(e) {
@@ -49,7 +49,7 @@ function editItem(e) {
   }
 }
 
-function onBtnAddClick() {
+function addNewRow() {
   let product = name.value;
   let priceProd = price.value;
   let amountProd = amount.value;
